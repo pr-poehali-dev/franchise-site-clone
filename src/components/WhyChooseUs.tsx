@@ -4,46 +4,42 @@ const WhyChooseUs = () => {
   const advantages = [
     {
       icon: "TrendingUp",
-      title: "Востребованность на рынке",
+      title: "Растущий рынок",
       description:
-        "Услуги детских центров всегда пользуются спросом, так как родители постоянно ищут возможности для всестороннего развития своих детей",
-      color: "text-blue-500",
-    },
-    {
-      icon: "BarChart3",
-      title: "Потенциал для роста и масштабирования",
-      description:
-        "Бизнес-модель позволяет стабильно увеличивать прибыль за счет расширения спектра услуг и добавления новых востребованных направлений",
-      color: "text-green-500",
-    },
-    {
-      icon: "Heart",
-      title: "Социальная значимость",
-      description:
-        "Ваш бизнес будет нести важную социальную миссию, способствуя развитию и воспитанию подрастающего поколения",
-      color: "text-red-500",
-    },
-    {
-      icon: "MapPin",
-      title: "Гибкость в выборе локации",
-      description:
-        "«Продленка в каждый дом» — концепция позволяет открыть несколько небольших центров в разных районах, оптимизируя затраты",
-      color: "text-purple-500",
+        "Сфера детского образования показывает стабильный рост 15% в год",
     },
     {
       icon: "Users",
-      title: "Комплексный подход к развитию ребенка",
-      description:
-        "Гармоничное сочетание воспитания и образования в едином процессе, обеспечивающее всестороннее развитие личности",
-      color: "text-orange-500",
+      title: "Проверенная модель",
+      description: "Более 150 успешных партнеров уже работают по нашей системе",
+    },
+    {
+      icon: "BookOpen",
+      title: "Уникальные методики",
+      description: "Авторские программы, разработанные ведущими педагогами",
+    },
+    {
+      icon: "Headphones",
+      title: "Полная поддержка",
+      description: "Персональный менеджер и техподдержка 24/7",
+    },
+    {
+      icon: "BarChart3",
+      title: "Высокая рентабельность",
+      description: "Рентабельность до 40% при правильном ведении бизнеса",
+    },
+    {
+      icon: "Shield",
+      title: "Эксклюзивная территория",
+      description: "Защита от конкуренции в радиусе 3 км от вашего центра",
     },
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-24 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
             Почему выбирают нас?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -52,24 +48,21 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {advantages.map((advantage, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 hover:shadow-xl transition-all duration-300 hover-scale animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="bg-white rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300"
             >
-              <div
-                className={`w-16 h-16 rounded-2xl bg-gray-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
-              >
+              <div className="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
                 <Icon
                   name={advantage.icon}
-                  size={32}
-                  className={advantage.color}
+                  className="text-blue-600"
+                  size={28}
                 />
               </div>
 
-              <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-purple-600 transition-colors">
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
                 {advantage.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">
